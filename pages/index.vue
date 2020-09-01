@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <div class="container">
     <div>
       <app-logo/>
       <h1 class="title">
@@ -19,7 +19,7 @@
           class="button--grey">GitHub</a>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -62,4 +62,3 @@ export default {
   padding-top: 15px;
 }
 </style>
-
