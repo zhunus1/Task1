@@ -1,9 +1,30 @@
 <template>
-  <div>
-    <nuxt/>
+  <div class="main">
+    <div class="temno">
+      <Header/>
+      <nuxt/>
+    </div>
   </div>
 </template>
 
+<script>
+import Header from '@/components/Header';
+export default {
+  components: {
+    Header,
+  },
+};
+</script>
+<style lang='scss' scoped>
+.main{
+  background: url('~@/static/HG.png'),url('~@/static/MG.png');
+  background-position: top center,bottom center; /* this positions the second image */
+  background-repeat:no-repeat; /* this applies to both images */
+  .temno{
+    background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
+  }
+}
+</style>
 <style>
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -50,4 +71,3 @@ html {
   background-color: #35495e;
 }
 </style>
-
