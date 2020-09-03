@@ -61,6 +61,10 @@
 </template>
 
 <style scoped>
+.test {
+  padding: 0px;
+}
+
 .footer {
   padding: 120px 229px 120px 229px;
 }
@@ -104,5 +108,6 @@ p {
 
 .margin-top {
   margin-top: 24px;
+
 }
 </style>

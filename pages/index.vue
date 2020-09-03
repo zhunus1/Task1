@@ -46,9 +46,61 @@
       </div>
     </section>
     <section class="middle">
-      <div class="">
-        777
+      <div v-for='(post, index) in posts' :key='index' class="section">
+        <template v-if='index % 2 == 0'>
+          <div class="column1">
+            <div class="">
+
+            <p id="counter">{{ count(index) }}</p>
+            <div class="started">
+              <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="72" height="2" fill="#FBD784"/>
+              </svg>
+              <p>{{ post.preview }}</p>
+            </div>
+            <p id="title">{{ post.title }}</p>
+            <p>{{ post.description }}</p>
+            <div class="more">
+              <p>read more</p>
+              <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" fill="#FBD784"/>
+              </svg>
+            </div>
+
+          </div>
+          </div>
+          <div class="column2">
+            <img :src="post.image" alt="" width="566px" height="720px">
+          </div>
+        </template>
+        <template v-else>
+          <div class="column2">
+            <img :src="post.image" alt="" width="566px" height="720px">
+          </div>
+          <div class="column1">
+            <div class="">
+
+            <p id="counter">{{ count(index) }}</p>
+            <div class="started">
+              <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="72" height="2" fill="#FBD784"/>
+              </svg>
+              <p>{{ post.preview }}</p>
+            </div>
+            <p id="title">{{ post.title }}</p>
+            <p>{{ post.description }}</p>
+            <div class="more">
+              <p>read more</p>
+              <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" fill="#FBD784"/>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+        </template>
       </div>
+
     </section>
   </div>
 </template>
@@ -57,6 +109,23 @@
 import AppLogo from '~/components/AppLogo.vue'
 
 export default {
+  mounted() {
+    this.$store.dispatch('post/setPosts')
+  },
+  computed: {
+    posts() {
+      return this.$store.getters['post/getPosts']
+    }
+  },
+  methods:{
+    count(index){
+      if(index<10){
+        return '0'+(index+1);
+      }else{
+        return index+1;
+      }
+    },
+  },
   components: {
     AppLogo
   }
@@ -67,13 +136,27 @@ export default {
 .kontainer {
   padding: 0px;
   margin: 0px 80px;
-  section{
-      min-height: 65vh;
+  .middle{
+    margin-top: 600px;
+    #counter{
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 240px;
+      line-height: 240px;
+      color: #FFFFFF;
+      opacity: 0.1;
+      position: relative;
+      z-index: 0;
+      left: -13%;
+      bottom:-120px;
+    }
   }
   .top{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 200px;
     .follow {
       display: flex;
       align-items: center;
@@ -174,6 +257,65 @@ export default {
           display: flex;
           justify-content: center;
           align-items: center;
+        }
+      }
+    }
+  }
+  .section{
+    padding: 149px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .column1{
+      padding:90px 0px 0px 140px;
+      margin-right: 114px;
+      #title{
+        font-family: Chronicle Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 77px;
+        color: #FFFFFF;
+      }
+      p{
+        margin:0px 0px 27px 0px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+      }
+      .started{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 27px;
+        p{
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 6px;
+          text-transform: uppercase;
+          color: #FBD784;
+          margin:0px 0px 0px 24px;
+        }
+      }
+      .more{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        p{
+          margin: 0px 16px 0px 0px;
+          font-family: Gilroy;
+          font-size: 18px;
+          line-height: 22px;
+          color: #FBD784;
         }
       }
     }
