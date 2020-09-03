@@ -127,8 +127,8 @@ export default {
 .kontainer {
   padding: 0px;
   margin: 0px 80px;
-  section{
-      min-height: 65vh;
+  .middle{
+    margin-top: 500px;
   }
   .top{
     display: flex;
@@ -244,21 +244,6 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    #block01{
-      background: url('~@/static/01.svg');
-      background-position: top left; /* this positions the second image */
-      background-repeat:no-repeat;
-    }
-    #block02{
-      background: url('~@/static/02.svg');
-      background-position: top left; /* this positions the second image */
-      background-repeat:no-repeat;
-    }
-    #block03{
-      background: url('~@/static/03.svg');
-      background-position: top left; /* this positions the second image */
-      background-repeat:no-repeat;
-    }
     .column1{
       padding:90px 0px 0px 140px;
       margin-right: 114px;
@@ -310,6 +295,22 @@ export default {
           color: #FBD784;
         }
       }
+    }
+    #block01{
+      background: url('~@/static/01.svg');
+      background-position: top left; /* this positions the second image */
+      background-repeat:no-repeat;
+    }
+    #block02{
+      background: url('~@/static/02.svg');
+      background-position: top left; /* this positions the second image */
+      background-repeat:no-repeat;
+      margin: 0px 0px 0px 114px;
+    }
+    #block03{
+      background: url('~@/static/03.svg');
+      background-position: top left; /* this positions the second image */
+      background-repeat:no-repeat;
     }
   }
 }
