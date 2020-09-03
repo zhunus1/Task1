@@ -3,18 +3,23 @@
     <div class="temno">
       <Header/>
       <nuxt/>
+      <Footer/>
     </div>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+
 export default {
   components: {
     Header,
+    Footer
   },
 };
 </script>
+
 <style lang='scss' scoped>
 .main{
   background: url('~@/static/HG.png'),url('~@/static/MG.png');
@@ -26,6 +31,7 @@ export default {
   }
 }
 </style>
+
 <style>
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

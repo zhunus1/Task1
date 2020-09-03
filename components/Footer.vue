@@ -15,12 +15,31 @@
             </clipPath>
           </defs>
         </svg>
+        <p>Get out there & discover your next slope, mountain & destination!</p>
+        <p>Copyright 2019 MNTN, Inc. Terms & Privacy</p>
       </div>
       <div class="second col-md-auto">
-        Variable width content
+        <h5>More on The Blog</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About MNTN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contributors & Writers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Write For Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Privacy Policy</a>
+          </li>
+        </ul>
       </div>
       <div class="third col col-lg-2">
-        3 of 3
+        <h6>More on MNTN</h6>
       </div>
     </div>
   </div>
