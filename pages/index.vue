@@ -49,7 +49,7 @@
       <div v-for='(post, index) in posts' :key='index' class="section">
         <template v-if='index % 2 == 0'>
           <div class="column1">
-            <img src="@/static/01.svg" alt="">
+            <p id="counter">{{ count(index) }}</p>
             <div class="started">
               <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="72" height="2" fill="#FBD784"/>
@@ -68,13 +68,13 @@
           <div class="column2">
             <img :src="post.image" alt="" width="566px" height="720px">
           </div>
-        </template>  
+        </template>
         <template v-else>
           <div class="column2">
             <img :src="post.image" alt="" width="566px" height="720px">
           </div>
           <div class="column1">
-            <img src="@/static/02.svg" alt="">
+            <p id="counter">{{ count(index) }}</p>
             <div class="started">
               <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="72" height="2" fill="#FBD784"/>
@@ -90,9 +90,9 @@
               </svg>
             </div>
           </div>
-        </template> 
+        </template>
       </div>
-      
+
     </section>
   </div>
 </template>
@@ -109,6 +109,15 @@ export default {
       return this.$store.getters['post/getPosts']
     }
   },
+  methods:{
+    count(index){
+      if(index<10){
+        return '0'+(index+1);
+      }else{
+        return index+1;
+      }
+    },
+  },
   components: {
     AppLogo
   }
@@ -121,11 +130,21 @@ export default {
   margin: 0px 80px;
   .middle{
     margin-top: 500px;
+    #counter{
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 240px;
+      line-height: 240px;
+      color: #FFFFFF;
+      opacity: 0.1;
+    }
   }
   .top{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 200px;
     .follow {
       display: flex;
       align-items: center;
