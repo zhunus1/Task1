@@ -16,7 +16,7 @@
           </defs>
         </svg>
         <p>Get out there & discover your next slope, mountain & destination!</p>
-        <p>Copyright 2019 MNTN, Inc. Terms & Privacy</p>
+        <p class="copyright">Copyright 2019 MNTN, Inc. Terms & Privacy</p>
       </div>
       <div class="second col-md-auto">
         <ul class="nav flex-column">
@@ -24,7 +24,7 @@
             <h5>More on The Blog</h5>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">About MNTN</a>
+            <a class="nav-link" href="#">About MNTN</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contributors & Writers</a>
@@ -46,7 +46,7 @@
             <h5>More on MNTN</h5>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">The Team</a>
+            <a class="nav-link" href="#">The Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Jobs</a>
@@ -77,6 +77,10 @@
 .first, .second, .third {
   border: solid 1px;
   border-color: red;
+}
+
+.copyright {
+  opacity: 0.5;
 }
 
 h5 {
