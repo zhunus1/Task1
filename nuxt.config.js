@@ -24,6 +24,15 @@ module.exports = {
   /*
   ** Build configuration
   */
+
+  modules: [
+    '@nuxtjs/axios',
+  ],
+
+  axios: {
+    baseURL: 'https://django-test-posts-app.herokuapp.com/api/v1/',
+  },
+
   build: {
     /*
     ** Run ESLint on save
