@@ -137,6 +137,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 200px;
     .follow {
       display: flex;
       align-items: center;
