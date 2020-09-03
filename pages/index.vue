@@ -47,7 +47,8 @@
     </section>
     <section class="middle">
       <div class="section">
-        <div class="column1" id="block01">
+        <div class="column1">
+          <img src="@/static/01.svg" alt="">
           <div class="started">
             <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="72" height="2" fill="#FBD784"/>
@@ -71,7 +72,8 @@
         <div class="column2">
           <img src="@/static/02.png" alt="" width="566px" height="720px">
         </div>
-        <div class="column1" id="block02">
+        <div class="column1">
+          <img src="@/static/02.svg" alt="">
           <div class="started">
             <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="72" height="2" fill="#FBD784"/>
@@ -89,7 +91,8 @@
         </div>
       </div>
       <div class="section">
-        <div class="column1" id="block03">
+        <div class="column1">
+          <img src="@/static/03.svg" alt="">
           <div class="started">
             <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="72" height="2" fill="#FBD784"/>
@@ -295,22 +298,6 @@ export default {
           color: #FBD784;
         }
       }
-    }
-    #block01{
-      background: url('~@/static/01.svg');
-      background-position: top left; /* this positions the second image */
-      background-repeat:no-repeat;
-    }
-    #block02{
-      background: url('~@/static/02.svg');
-      background-position: top left; /* this positions the second image */
-      background-repeat:no-repeat;
-      margin: 0px 0px 0px 114px;
-    }
-    #block03{
-      background: url('~@/static/03.svg');
-      background-position: top left; /* this positions the second image */
-      background-repeat:no-repeat;
     }
   }
 }
