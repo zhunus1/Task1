@@ -17,12 +17,11 @@ export default {
 </script>
 <style lang='scss' scoped>
 .main{
-  background: url('~@/static/HG.png'),url('~@/static/MG.png');
-  background-position: top center,center bottom; /* this positions the second image */
-  background-repeat:no-repeat;
-  background-size: contain;
+  background: url('~@/static/HG.png'),url('~@/static/MG.png'),url('~@/static/VG.png');
+  background-position: top center,top 830px center,center bottom 1574px; /* this positions the second image */
+  background-repeat:no-repeat; /* this applies to both images */
   .temno{
-    background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
+    background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%),linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);;
   }
 }
 </style>
