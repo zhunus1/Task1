@@ -49,6 +49,8 @@
       <div v-for='(post, index) in posts' :key='index' class="section">
         <template v-if='index % 2 == 0'>
           <div class="column1">
+            <div class="">
+
             <p id="counter">{{ count(index) }}</p>
             <div class="started">
               <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,6 +66,8 @@
                 <path d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" fill="#FBD784"/>
               </svg>
             </div>
+
+          </div>
           </div>
           <div class="column2">
             <img :src="post.image" alt="" width="566px" height="720px">
@@ -74,6 +78,8 @@
             <img :src="post.image" alt="" width="566px" height="720px">
           </div>
           <div class="column1">
+            <div class="">
+
             <p id="counter">{{ count(index) }}</p>
             <div class="started">
               <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,6 +96,8 @@
               </svg>
             </div>
           </div>
+
+        </div>
         </template>
       </div>
 
@@ -129,7 +137,7 @@ export default {
   padding: 0px;
   margin: 0px 80px;
   .middle{
-    margin-top: 500px;
+    margin-top: 600px;
     #counter{
       font-family: Gilroy;
       font-style: normal;
@@ -138,6 +146,10 @@ export default {
       line-height: 240px;
       color: #FFFFFF;
       opacity: 0.1;
+      position: relative;
+      z-index: 0;
+      left: -13%;
+      bottom:-120px;
     }
   }
   .top{

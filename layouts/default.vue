@@ -22,11 +22,12 @@ export default {
 
 <style lang='scss' scoped>
 .main{
-  background: url('~@/static/HG.png'),url('~@/static/MG.png'),url('~@/static/VG.png');
-  background-position: top center,top 21% center,center bottom 65.2%; /* this positions the second image */
+  background: url('~@/static/Zh.png');
+  background-size: 100% 35%;
+   /* this positions the second image */
   background-repeat:no-repeat; /* this applies to both images */
   .temno{
-    background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%),linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 41.38%);;
+    background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%),linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 31.38%);;
   }
 }
 </style>
