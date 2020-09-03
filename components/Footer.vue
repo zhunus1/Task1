@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <div class="row justify-content-md-center">
+    <div class="test row justify-content-md-center">
       <div class="first col">
         <svg width="32" height="38" viewBox="0 0 108 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
@@ -19,8 +19,10 @@
         <p>Copyright 2019 MNTN, Inc. Terms & Privacy</p>
       </div>
       <div class="second col-md-auto">
-        <h5>More on The Blog</h5>
         <ul class="nav flex-column">
+          <li class="nav-item">
+            <h5>More on The Blog</h5>
+          </li>
           <li class="nav-item">
             <a class="nav-link active" href="#">About MNTN</a>
           </li>
@@ -39,7 +41,20 @@
         </ul>
       </div>
       <div class="third col col-lg-2">
-        <h6>More on MNTN</h6>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <h5>More on MNTN</h5>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">The Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Press</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -51,6 +66,10 @@
   border-color: aqua;
 }
 
+.test {
+  padding: 0px;
+}
+
 .footer {
   padding: 120px 229px 120px 229px;
 }
@@ -58,5 +77,31 @@
 .first, .second, .third {
   border: solid 1px;
   border-color: red;
+}
+
+h5 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FBD784;
+}
+
+a {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
 }
 </style>
