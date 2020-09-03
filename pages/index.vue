@@ -46,8 +46,26 @@
       </div>
     </section>
     <section class="middle">
-      <div class="">
-        777
+      <div class="section">
+        <div class="column1">
+          <div class="started">
+            <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="72" height="2" fill="#FBD784"/>
+            </svg>
+            <p>Get started</p>
+          </div>
+          <p id="title">What level of hiker are you?</p>
+          <p>Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?</p>
+          <div class="more">
+            <p>read more</p>
+            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" fill="#FBD784"/>
+            </svg>
+          </div>
+        </div>
+        <div class="column2">
+          <img src="@/static/01.png" alt="" width="566px" height="720px">
+        </div>
       </div>
     </section>
   </div>
@@ -174,6 +192,69 @@ export default {
           display: flex;
           justify-content: center;
           align-items: center;
+        }
+      }
+    }
+  }
+  .section{
+    padding: 149px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    .column1{
+      background: url('~@/static/01.svg');
+      background-position: top left; /* this positions the second image */
+      background-repeat:no-repeat;
+      padding:90px 0px 0px 140px;
+      margin-right: 114px;
+      #title{
+        font-family: Chronicle Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 77px;
+        color: #FFFFFF;
+      }
+      p{
+        margin:0px 0px 27px 0px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+      }
+      .started{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 27px;
+        p{
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 6px;
+          text-transform: uppercase;
+          color: #FBD784;
+          margin:0px 0px 0px 24px;
+        }
+      }
+      .more{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        p{
+          margin: 0px 16px 0px 0px;
+          font-family: Gilroy;
+          font-size: 18px;
+          line-height: 22px;
+          color: #FBD784;
         }
       }
     }

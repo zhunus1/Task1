@@ -18,9 +18,8 @@ export default {
 <style lang='scss' scoped>
 .main{
   background: url('~@/static/HG.png'),url('~@/static/MG.png');
-  background-position: top center,center bottom; /* this positions the second image */
-  background-repeat:no-repeat;
-  background-size: contain;
+  background-position: top center,bottom center; /* this positions the second image */
+  background-repeat:no-repeat; /* this applies to both images */
   .temno{
     background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
   }
